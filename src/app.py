@@ -9,6 +9,7 @@ def index():
 
 @app.route('/registro')
 def registro():
+    print('registro')
     return render_template('registro.html')
 
 if __name__ == '__main__':
