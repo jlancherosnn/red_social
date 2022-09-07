@@ -1,13 +1,9 @@
 .main{
-    height: 800px;
+    height: 1200px;
 }
 
-.gallery{
-    width 65%;
-    margin-left: auto;
-    margin-right: auto;
+.contenedor img{
+    margin: auto;
     display: block;
-    padding-top:10 px;
-
 }
 
