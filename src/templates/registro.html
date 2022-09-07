@@ -6,6 +6,21 @@
 
 {% block body %}
     <h1>REGISTRO</h1>
-    <label>Nombre</label>
-    <label>Apellido</label>
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido">
+
+    <label for="nacimiento"> Fecha Nacimiento</label>
+    <input type="date" name="nacimiento">
+
+    <label for="usuario">Nombre de Usuario</label>
+    <input type="text" name="usuario">
+
+    <label for="contraseña">Contraseña</label>
+    <input type="password" name="contraseña">
+
+    <label for="contraseñaconf">Confirmar Contraseña</label>
+    <input type="password" name="contraseñaconf">
 {% endblock %}
