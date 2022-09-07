@@ -11,3 +11,14 @@
 
 }
 
+.label {
+  display: block;
+  padding-left: 100px;
+  text-indent: -2px;
+}
+
+input{
+
+  width: 200px;
+  height: 20px;
+}
