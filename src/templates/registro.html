@@ -5,22 +5,38 @@
 
 
 {% block body %}
-    <h1>REGISTRO</h1>
+    <center>
+        <h1>REGISTRO</h1>
+    </center>
+    
     <label for="nombre">Nombre</label>
-    <input type="text" name="nombre">
+    <input type="text" name="nombre"><BR>
 
     <label for="apellido">Apellido</label>
-    <input type="text" name="apellido">
+    <input type="text" name="apellido"><BR>
 
     <label for="nacimiento"> Fecha Nacimiento</label>
-    <input type="date" name="nacimiento">
+    <input type="date" name="nacimiento"><BR>
 
     <label for="usuario">Nombre de Usuario</label>
-    <input type="text" name="usuario">
+    <input type="text" name="usuario"><BR>
 
     <label for="contraseña">Contraseña</label>
-    <input type="password" name="contraseña">
+    <input type="password" name="contraseña"><BR>
 
     <label for="contraseñaconf">Confirmar Contraseña</label>
-    <input type="password" name="contraseñaconf">
+    <input type="password" name="contraseñaconf"><BR>
+
+    <label for="correo">Correo Institucional</label>
+    <input type="email" name="correo"><BR>
+
+    <label for="carrera"> Carrera</label>
+    <input type="text" name="carrera"><BR>
+
+    <button type="submit"> Registrar </button>
+    
+    <center>
+        <img src="/static/img/logo.jpg" alt="1">
+    </center>
+    
 {% endblock %}
