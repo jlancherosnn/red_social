@@ -8,35 +8,39 @@
     <center>
         <h1>REGISTRO</h1>
     </center>
-    <div class="label">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre"><BR><BR>
+    <div id="contenedores">
+        <div id="registro">
+            <form id="registroform">
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido"><BR><BR>
-
-        <label for="nacimiento"> Fecha Nacimiento:</label>
-        <input type="date" name="nacimiento"><BR><BR>
-
-        <label for="usuario">Nombre de Usuario:</label>
-        <input type="text" name="usuario"><BR><BR>
-
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contraseña"><BR><BR>
-
-        <label for="contraseñaconf">Confirmar Contraseña:</label>
-        <input type="password" name="contraseñaconf"><BR><BR>
-
-        <label for="correo">Correo Institucional:</label>
-        <input type="email" name="correo"><BR><BR>
-
-        <label for="carrera"> Carrera:</label>
-        <input type="text" name="carrera"><BR><BR>
-
-        <button type="submit"> Registrar </button>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido">
+    
+                <label for="nacimiento"> Fecha Nacimiento:</label>
+                <input type="date" name="nacimiento">
+    
+                <label for="usuario">Nombre de Usuario:</label>
+                <input type="text" name="usuario">
+    
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña">
+    
+                <label for="contraseñaconf">Confirmar Contraseña:</label>
+                <input type="password" name="contraseñaconf">
+    
+                <label for="correo">Correo Institucional:</label>
+                <input type="email" name="correo">
+    
+                <label for="carrera"> Carrera:</label>
+                <input type="text" name="carrera">
+                <button type="submit" title="Registrar" name="Registrar">Registar</button>
+            </form>
+        </div>
+       
+        <img class="imagres" src="/static/img/Logo.png">
+        
     </div>
-    <center>
-        <img src="/static/img/logo.jpg" alt="1">
-    </center>
 
 {% endblock %}
