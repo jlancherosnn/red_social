@@ -13,6 +13,11 @@ def registro():
     print('registro')
     return render_template('registro.html')
 
+@app.route('/muro')
+def menu():
+    print('muro')
+    return render_template('menu.html')
+
 if __name__ == '__main__':
 
     app.run(debug=True, port=1598)
