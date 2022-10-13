@@ -448,7 +448,6 @@ body{
 }
 
 .wrapper .section .top_navbar{
-    background: rgb(139, 138, 138);
     height: 50px;
     display: flex;
     align-items: center;
