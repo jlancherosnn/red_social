@@ -214,7 +214,7 @@ hr {
 /* ajustar a pantallas con ancho menor o igual a 775px; */
 /* ajustar a pantallas con ancho menor o igual a 775px; */
 
-/* registro diseño*/
+/************************** registro diseño*************************/
 /*si no funcian toca borrar esta parte*/
 body {
     margin: 0;
@@ -223,46 +223,34 @@ body {
 }
 
 .imagres {
-    padding-left: 150px;
-    height: 250px;
-    width: 250px;
+    padding-left: 0px;
+    height: 310px;
+    width: 310px;
+    position: absolute;
+    top: 90px;
+    right: 16px;
+    font-size: 18px;
 }
-
+#contenedores h1{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
 
 #contenedores {
     display: flex;
     height: 100%;
     max-height: 570px;
-    min-height: 570px;
+    min-height: 649px;
     align-items: center;
     justify-content: center;
-
-    background-color: #000000;
+    background: #E4E4E4;
+    
 }
 
-#contenedorcentradoregis {
-    line-height: 1.34;
-    font-size: 12px;
-    height: 456px;
-    width: 396px;
-    font-family: inherit;
 
-    background-color: #df0606;
-
-    opacity: 0.50;
-    filter: alpha(opacity=50);
-
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-
-    padding: 30px;
-    box-sizing: border-box;
-}
 /* formulario de Registro */
 /* formulario de Registro */
 #registro {
@@ -272,12 +260,12 @@ body {
     min-height: 560px;
     max-width: 550px;
     min-width: 450px;
-    padding: 0px 50px 80px 30px;
+    padding: 0px 100px 0px 100px;
     background-color: #C1C1C1;
 
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
 
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
@@ -290,7 +278,6 @@ body {
     font-family: 'Overpass', sans-serif;
     font-size: 120%;
     color:#000000;
-
     margin-top: 15px;
 }
 #registro input{
@@ -360,7 +347,7 @@ input{
   height: 20px;
 }
 
-/*menu*/
+/**************menu**************/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
@@ -378,8 +365,8 @@ body{
 
 .wrapper .sidebar{
     
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(47,47,101,1) 35%, rgba(90,227,255,0.8995973389355743) 100%);
+    background: rgb(15,255,228);
+background: linear-gradient(209deg, rgba(15,255,228,1) -40%, rgba(0,129,255,1) 0%, rgba(0,129,255,1) 8%);
     position: fixed;
     top: 0;
     left: 0;
@@ -413,7 +400,7 @@ body{
 
 .wrapper .sidebar ul li a{
     display: block;
-    padding: 30px 35px;
+    padding: 24px 35px;
     border-bottom: 2px solid hsl(207, 80%, 31%);
     color: rgb(241, 237, 237);
     font-size: 16px;

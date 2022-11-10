@@ -5,18 +5,18 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     print('index')
-    return render_template('index.html')
+    return render_template('login/index.html')
 
 
 @app.route('/registro')
 def registro():
     print('registro')
-    return render_template('registro.html')
+    return render_template('login/registro.html')
 
 @app.route('/muro')
 def menu():
     print('muro')
-    return render_template('menu.html')
+    return render_template('muro/muroinicio.html')
 
 if __name__ == '__main__':
 
