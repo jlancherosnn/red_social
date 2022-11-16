@@ -3,12 +3,15 @@ from config import *
 from publicaciones import Publicaciones
 from persona import Persona
 from bson.objectid import ObjectId
+from flask_login import LoginManager,login_required
 from flask_wtf.csrf import CSRFProtect
+
 
 app = Flask(__name__)
 con_bd = Conexion()
 
-csrf = CSRFProtect()
+
+#csrf = CSRFProtect()
 
 @app.route('/')
 def index():
@@ -60,6 +63,7 @@ def validaruser():
         return"ERROR"
 
 @app.route('/muro')
+#@login_required
 def menu():
     publicacio = con_bd['Publicaciones']
     print('muro')
@@ -96,6 +100,11 @@ def editar_persona(persona_id):
     else:
         return 'ERROR'
 
+def error_401(error):
+    return render_template('login/index.html')
+
+def error_404(error):
+    return "Página No Encontrada",404
 
 @app.route('/perfil')
 def perfil():
@@ -103,5 +112,7 @@ def perfil():
     
 
 if __name__ == '__main__':
-    csrf.init_app(app)
+    #csrf.init_app(app)
+    app.register_error_handler(401,error_401)
+    app.register_error_handler(404,error_404)
     app.run(debug=True, port=1598)
