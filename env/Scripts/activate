@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Documentos\PRACTICAS PYTHON\red\env"
+VIRTUAL_ENV="C:\Users\Alexis\Documents\GitHub\red_social\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
