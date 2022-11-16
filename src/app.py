@@ -3,11 +3,12 @@ from config import *
 from publicaciones import Publicaciones
 from persona import Persona
 from bson.objectid import ObjectId
+from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
 con_bd = Conexion()
 
-
+csrf = CSRFProtect()
 
 @app.route('/')
 def index():
@@ -102,4 +103,5 @@ def perfil():
     
 
 if __name__ == '__main__':
+    csrf.init_app(app)
     app.run(debug=True, port=1598)
